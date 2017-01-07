@@ -1,0 +1,58 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   argb:00000000,  #D8DEE9 , argb:00000000,  #FFFFFF ,  #111111
+! Color scheme for urgent row
+rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #111111
+! Color scheme for active row
+rofi.color-active:                   argb:00000000,  #6699CC , argb:00000000,  #6699CC ,  #111111
+! Color scheme window
+rofi.color-window:                   argb:FF000000,  #FFFFFF ,  #FFFFFF
+! Separator style (none, dash, solid)
+rofi.separator-style:                solid
+
+
+
+
+
+
+! special
+*.foreground:   #c6d4d6
+*.background:   #0a0b0b
+*.cursorColor:  #c6d4d6
+
+! black
+*.color0:       #121414
+*.color8:       #54b0ba
+
+! red
+*.color1:       #1b1d1d
+*.color9:       #78c698
+
+! green
+*.color2:       #2b2e2f
+*.color10:      #60979d
+
+! yellow
+*.color3:       #424747
+*.color11:      #e2a598
+
+! blue
+*.color4:       #5e6566
+*.color12:      #ea6a39
+
+! magenta
+*.color5:       #818a8b
+*.color13:      #ee92d5
+
+! cyan
+*.color6:       #a9b5b6
+*.color14:      #5fba86
+
+! white
+*.color7:       #dae4e6
+*.color15:      #5ea47b
+

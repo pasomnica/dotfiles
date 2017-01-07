@@ -1,0 +1,31 @@
+bind -f common space player-pause
+bind -f common right player-next
+bind -f common left player-prev
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }} %{?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_title=%a - %l
+set format_title=%a - %l - %t
+set show_remaining_time=false
+set show_current_bitrate=true
+set mouse=false
+set mouse=true
+mouse
+colorscheme default
+colorscheme solarized-dark
+colorscheme gray-88
+colorscheme zenburn
+colorscheme solarized-light
+colorscheme night
+changescheme default
+pause
+colorscheme xterm-white
+colorscheme cyan
+colorscheme itunes-like
+colorscheme
+bind -f common * colorscheme
+bind common / shell
+bind common <key> shell/
+bind common / colorscheme
+bind common = colorscheme
+bind common t colorscheme
+bind common o colorscheme

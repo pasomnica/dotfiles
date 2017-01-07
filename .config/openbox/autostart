@@ -1,0 +1,16 @@
+xcape -e 'Super_L=Super_L|R' &
+
+exec feh --bg-tile '/home/kenty/Wallpapers/wallpaper.png' &
+
+xfce4-power-manager &
+
+tlp start &
+
+compton &
+
+tint2 &
+
+pytyle &
+
+
+

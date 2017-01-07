@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="Apps">
+			<action name="Execute">
+				<execute>rofi -show run</execute>
+			</action>
+		</item>
+		<item label="Menu config">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item label="Settings">
+			<action name="Execute">
+				<execute>obconf</execute>
+			</action>
+		</item>
+		<item label="Refresh">
+			<action name="Restart"/>
+		</item>
+		<item label="Reboot">
+			<action name="Execute">
+				<execute>reboot</execute>
+			</action>
+		</item>
+		<item label="Power Off">
+			<action name="Execute">
+				<execute>poweroff</execute>
+			</action>
+		</item>
+		<item label="Logout">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>
